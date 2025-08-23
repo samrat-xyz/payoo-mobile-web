@@ -23,7 +23,7 @@
                 <img src="./assets/Group.png" alt="">
 
                 <div>
-                    <span class="text-xl font-semibold">$45000</span>
+                    <p class="text-xl font-semibold">$<span id="current-money">45000</span></p>
                     <p class="text-gray-400 text-sm">Available Balance</p>
                 </div>
             </div>
@@ -75,19 +75,19 @@
             <form class="p-4 space-y-4">
 
                 <label class="block font-bold">Select A Bank</label>
-                <select class="select w-full ">
+                <select class="select w-full " required>
                     <option disabled selected>Select A Bank</option>
                     <option>Islamic Bank</option>
                     <option>Sonali Bank</option>
                     <option>City Bank</option>
                 </select>
                 <label for="" class="block font-bold">Bank Account Number</label>
-                <input type="text" placeholder="Type here" class="input w-full " />
-                <label for="" class="block font-bold">Amount To Add</label>
-                <input type="text" placeholder="Type here" class="input w-full " />
+                <input type="text" placeholder="Type here" class="input w-full " required/>
+                <label for="" class="block font-bold" >Amount To Add</label>
+                <input type="text" placeholder="Type here" class="input w-full " required id="take-amount"/>
                 <label for="" class="block font-bold">Pin Number</label>
-                <input type="text" placeholder="Type here" class="input w-full " /><br>
-                <button type="button" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-xl">Add
+                <input type="text" placeholder="Type here" class="input w-full " required/><br>
+                <button id="add-money-btn" type="button" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-xl">Add
                     Money</button>
             </form>
         </div>
