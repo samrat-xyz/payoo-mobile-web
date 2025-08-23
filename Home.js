@@ -1,6 +1,8 @@
 // logout functionality 
 
-
+document.getElementById('logout-btn').addEventListener('click',()=>{
+    window.location.href = 'index.html';
+})
 
 
 // Add Money Card
