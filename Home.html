@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <!-- Daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -16,7 +17,7 @@
 
 <body>
     <section class="max-w-lg mx-auto">
-        <nav class="border flex justify-between items-center p-2">
+        <nav class="flex justify-between items-center p-2 border-b-1">
             <div class="flex items-center">
 
                 <img src="./assets/Group.png" alt="">
@@ -27,13 +28,68 @@
                 </div>
             </div>
             <div>
-                <button class="btn text-[15px] font-light text-gray-700"> <i class="fa-solid fa-right-to-bracket rotate-180"></i> Log Out</button>
+                <button class="btn text-[15px] font-light text-gray-700"> <i
+                        class="fa-solid fa-right-to-bracket rotate-180"></i> Log Out</button>
             </div>
         </nav>
-        <div class="my-5 ">
+        <div class="my-5 px-4">
             <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
-            <p class="text-gray-700 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            <p class="text-gray-700 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low
+                and </p>
         </div>
+        <!-- cards -->
+        <div class="grid grid-cols-3 gap-6 p-3">
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/wallet1.png" alt="">
+                <h2 class="text-sm">Add Money</h2>
+            </div>
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/send1.png" alt="">
+                <h2 class="text-sm">Cashout</h2>
+            </div>
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/money1.png" alt="">
+                <h2 class="text-sm">Transfer</h2>
+            </div>
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/bonus1.png" alt="">
+                <h2 class="text-sm">Bonus</h2>
+            </div>
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/purse1.png" alt="">
+                <h2 class="text-sm">Pay Bill</h2>
+            </div>
+            <div class="border flex flex-col items-center p-4 rounded-lg border-gray-300">
+                <img src="./assets/transaction1.png" alt="">
+                <h2 class="text-sm">Transition</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="max-w-lg mx-auto">
+        <!-- Add Money -->
+        <div >
+            <h2 class="pl-4 text-xl font-bold mt-4">Add Money</h2>
+            <form class="p-4 space-y-4">
+
+                <label class="block font-bold">Select A Bank</label>
+                <select class="select w-full ">
+                    <option disabled selected>Select A Bank</option>
+                    <option>Islamic Bank</option>
+                    <option>Sonali Bank</option>
+                    <option>City Bank</option>
+                </select>
+                <label for="" class="block font-bold">Bank Account Number</label>
+                <input type="text" placeholder="Type here" class="input w-full " />
+                <label for="" class="block font-bold">Amount To Add</label>
+                <input type="text" placeholder="Type here" class="input w-full " />
+                <label for="" class="block font-bold">Pin Number</label>
+                <input type="text" placeholder="Type here" class="input w-full " /><br>
+                <button type="button" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-xl">Add Money</button>
+            </form>
+        </div>
+
     </section>
 </body>
 
