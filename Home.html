@@ -86,7 +86,7 @@
                 <label for="" class="block font-bold" >Amount To Add</label>
                 <input type="text" placeholder="Type here" class="input w-full " required id="take-amount"/>
                 <label for="" class="block font-bold">Pin Number</label>
-                <input type="text" placeholder="Type here" class="input w-full " required/><br>
+                <input type="text" placeholder="Type here" class="input w-full " id="sendMoney-pin" required/><br>
                 <button id="add-money-btn" type="button" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-xl">Add
                     Money</button>
             </form>
@@ -99,12 +99,12 @@
                 <input type="text" placeholder="Type here" class="input w-full " />
 
                 <label class="block font-bold">Amount To Cash Out</label>
-                <input type="text" placeholder="Type here" class="input w-full " />
+                <input type="text" placeholder="Type here" class="input w-full " id="cashout-amount"/>
 
                 <label class="block font-bold">Pin Number</label>
-                <input type="password" placeholder="Type here" class="input w-full " />
+                <input type="password" placeholder="Type here" class="input w-full " id="cashout-pin"/>
 
-                <button type="button" class="w-full py-2 bg-blue-600 text-white font-semibold rounded-xl">Cash
+                <button id="cashout-money-btn" type="button" class="w-full py-2 bg-blue-600 text-white font-semibold rounded-xl">Cash
                     Out</button>
             </form>
         </div>
